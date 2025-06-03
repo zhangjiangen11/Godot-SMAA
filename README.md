@@ -1,9 +1,8 @@
 ## Godot-SMAA
 A Godot compositor effect to implement Enhanced Subpixel Morphological Antialiasing (SMAA). Currently this implementation only supports SMAA 1x and S2x.  
+**Built-in SMAA support has been added to the Godot Engine in 4.5 dev 5. Thank you to all those who helped the PR along. Odds are you'll want to use that, but this repository will be kept open for experimentation.**
 **Godot 4.4 dev 6 introduced breaking API changes. For Godot versions 4.3 to 4.4 dev 5, look into the v4.3 branch**
 **Godot compositor effects were added with Godot 4.3, so this project will not work on any prior version.**
-
-This compositor effect uses render pipelines instead of compute pipelines so that adapting [the original SMAA shader](https://github.com/iryoku/smaa) would be simpler.
 
 ### Installing
 To add Godot-SMAA to your project, copy over the SMAA folder to the root of your project. If you'd like to put it somewhere else in your project folder, then you'll need to change `SMAA_dir` in SMAA.gd.  
